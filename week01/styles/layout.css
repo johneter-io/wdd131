@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat, Calibri, sans-serif;
+    color: #eee;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    /* header • content • footer */
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+header {
+    grid-column: 1 / 5;
+    grid-row: 1;
+}
+
+h1 {
+    background-color: rgb(123, 123, 123, 0.5);
+    text-align: center;
+    padding: 2rem;
+
+}
+
+/* navigation block style */
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    align-items: center;
+}
+
+/* style of each navigation element */
+.navigation li {
+    flex: 1 1 auto;
+}
+
+/* text style for each link */
+.navigation a {
+    font-weight: 700;
+    display: block;
+    color: #eee;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* highlight each navigation button */
+.navigation a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(171, 199, 27);
+}
+
+main {
+    background-color: rgb(120, 80, 123);
+    grid-column: 1 / 4;
+    grid-row: 2;
+    padding: 2rem;
+}
+
+aside {
+    background-color: rgb(76, 60, 77);
+    grid-column: 4 / 5;
+    grid-row: 2;
+    padding: 2rem;
+}
+
+footer {
+    background-color: rgb(93, 6, 224, 0.5);
+    grid-column: 1 / 5;
+    grid-row: 3;
+    padding: 2rem;
+}
