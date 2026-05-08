@@ -23,7 +23,7 @@ header {
 
 h1 {
     background-color: rgb(123, 123, 123, 0.5);
-    text-align: center;
+    text-align: left;
     padding: 2rem;
 
 }
@@ -78,4 +78,5 @@ footer {
     grid-column: 1 / 5;
     grid-row: 3;
     padding: 2rem;
+    text-align: center;
 }
