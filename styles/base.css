@@ -6,10 +6,8 @@
 }
 
 :root {
-    --accent-color: rgba(255, 165, 0);
-    --primary-color: rgb(39, 46, 72);
-    --secondary-color: rgb(255, 255, 0);
-    --text-color: rgb(34, 30, 30);
+    --primary-color: rgb(0, 0, 0);
+    --secondary-color: rgb(0, 204, 255);
     --bg-color: rgb(255, 255, 255);
     --font-main: "Lato", sans-serif;
     --max-width: 1200px;
@@ -20,7 +18,6 @@ html {
 }
 
 /* --------------------THE PAGE------------------------ */
-
 header {
     background-color: var(--primary-color);
 }
@@ -29,7 +26,7 @@ body {
     font-family: var(--font-main);
     font-weight: 900;
     line-height: 2rem;
-    color: var(--text-color);
+    color: var(--primary-color);
     background-color: var(--bg-color);
 }
 
@@ -46,11 +43,6 @@ h3 {
     margin: 1rem;
 }
 
-a {
-    color: var(--text-color);
-    text-decoration: none;
-}
-
 img {
     display: block;
     max-width: 100%;
@@ -61,26 +53,23 @@ img {
     text-align: center;
     color: var(--bg-color);
     padding: 2rem;
-    background-color: var(--primary-color);
     font-size: 2.5rem;
     font-weight: 400;
 }
 
 /* --------------------NAVBAR------------------------ */
-
 .navigation ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     justify-content: space-around;
-    background-color: var(--accent-color);
-
     padding: 1rem;
+    background-color: var(--secondary-color);
 }
 
 .navigation a {
     display: block;
-    color: var(--text-color);
+    color: var(--primary-color);
     font-size: 1.5rem;
     font-weight: 400;
     text-decoration: none;
@@ -88,7 +77,7 @@ img {
 }
 
 nav a:hover {
-    color: var(--secondary-color);
+    color: var(--bg-color);
 }
 
 /* --------------------MAIN------------------------ */
@@ -104,13 +93,12 @@ main h1 {
     font-size: 4rem;
     font-weight: 700;
     text-align: center;
-    color: var(--text-color);
+    color: var(--primary-color);
     padding: 1rem;
 
 }
 
 /* --------------------2 sections | 2 cards (def)------------------------ */
-
 .container {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -121,7 +109,7 @@ main h1 {
 .card {
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--accent-color);
+    border: 1.2px solid var(--secondary-color);
     border-radius: 12px;
     overflow: hidden;
 }
@@ -130,7 +118,7 @@ main h1 {
 /* -------------------------div 1----------------------------- */
 .card h2 {
     font-family: var(--font-main);
-    color: var(--bg-color);
+    color: var(--secondary-color);
     font-size: 1rem;
     font-weight: 900;
     text-align: center;
@@ -156,7 +144,7 @@ main h1 {
 .about-me p {
     flex: 1;
     font-size: 1rem;
-    color: var(--text-color);
+    color: var var(--primary-color);
 }
 
 .about-me img {
@@ -169,13 +157,12 @@ main h1 {
 }
 
 /* --------------------div 2------------------------ */
-
 .location h3 {
     font-family: var(--font-main);
     font-size: 1.5rem;
     font-weight: 900;
     text-align: center;
-    color: var(--text-color);
+    color: var(--primary-color);
     border-bottom: 1px solid var(--accent-color);
 }
 
@@ -201,7 +188,7 @@ main h1 {
 
 .about-location figcaption {
     font-style: italic;
-    color: var(--text-color);
+    color: var(--primary-color);
     margin-top: 0.2rem;
     text-align: center;
     font-weight: 400;
@@ -210,14 +197,13 @@ main h1 {
 
 .about-location p {
     flex: 1;
-    color: var(--text-color);
+    color: var(--primary-color);
     margin-top: 1rem;
     margin-right: 8rem;
     font-size: 1rem;
 }
 
 /* --------------------section 2: card------------------------ */
-
 .link-list {
     list-style: disc;
     padding-left: 1.5rem;
@@ -232,7 +218,6 @@ main h1 {
 }
 
 /* --------------------FOOTER------------------------ */
-
 footer {
     background-color: var(--primary-color);
     text-align: center;
