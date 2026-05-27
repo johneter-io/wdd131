@@ -28,7 +28,7 @@
             <picture>
                 <source srcset="images/jacmel-large.webp" media="(min-width: 1000px)">
                 <source srcset="images/jacmel-medium.webp" media="(min-width: 550px)">
-                <img src="images/jacmel-small.jpg" alt="Jacmel Beach">
+                <img src="images/jacmel-small.webp" alt="Jacmel Beach">
             </picture>
         </section>
 
@@ -82,7 +82,7 @@
 
             <div class="weather-list">
                 <span class="info">Temperature:</span>
-                <span class="value">°C</span>
+                <span class="value"><span id="temperature"></span> °C</span>
             </div>
 
             <div class="weather-list">
@@ -92,12 +92,12 @@
 
             <div class="weather-list">
                 <span class="info">Wind Speed:</span>
-                <span class="value">km/h</span>
+                <span class="value"><span id="windspeed"></span> km/h</span>
             </div>
 
             <div class="weather-list">
                 <span class="info">Wind Chill:</span>
-                <span class="value"></span>
+                <span class="value" id="windchill"></span>
             </div>
         </section>
     </main>

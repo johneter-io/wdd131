@@ -7,11 +7,11 @@ lastModified.textContent =
     `Last Modification: ${document.lastModified}`;
 
 
-const temperature = 28;
+const temperature = 5;
 const windSpeed = 27;
 
 document.querySelector("#temperature").textContent = temperature;
-document.querySelector("#windSpeed").textContent = windSpeed;
+document.querySelector("#windspeed").textContent = windSpeed;
 
 function calculateWindChill(temp, speed) {
     return (
