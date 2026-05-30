@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(101, 14, 148);
+    --secondary-color: rgb(255, 255, 255);
+    --accent-color: rgb(225, 255, 0);
+    --bg-color: rgb(236, 232, 232);
+    --font-main: "Montserrat", sans-serif;
+
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-main);
+    max-width: 100%;
+    background-color: var(--bg-color);
+
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 2rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+
+}
+
+.nav-container {
+    margin-left: auto;
+}
+
+.nav-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem;
+    margin-right: 3rem;
+}
+
+.nav-container a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* HAMBURGER MENU */
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: var(--secondary-color);
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+
+}
+
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+    color: var(--accent-color);
+}
+
+main h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.container-fig {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.container-fig figure {
+    margin: 0;
+
+}
+
+.container-fig img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
+
+.container-fig figcaption {
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--primary-color);
+    padding: 0.5rem 0;
+}
+
+.container-fig img:hover {
+    transform: scale(1.05);
+    border: 1.5px solid var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
