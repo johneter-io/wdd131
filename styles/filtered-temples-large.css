@@ -1,24 +1,36 @@
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #course-title {
+        padding-left: 2rem;
+    }
 
     #menu {
         display: none;
     }
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .nav-container {
+    nav {
         flex-direction: row;
+        justify-content: flex-end;
+        background-color: var(--primary-color);
     }
 
-    .nav-container a {
+    nav a {
         display: block;
+        padding: 1.25rem 1.5rem;
     }
 
-    .container-fig {
+    nav a:hover,
+    nav a.active {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    .album {
         grid-template-columns: repeat(3, 1fr);
     }
 }

@@ -14,88 +14,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="scripts/temples.js" defer></script>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Temple Album</h1>
+        <div class="header-content">
+            <span id="course-title">Temple Album</span>
+            <button id="menu" type="button" aria-label="Open navigation menu"></button>
 
-        <nav class="nav-container">
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Old</a>
-                </li>
-                <li>
-                    <a href="#">New</a>
-                </li>
-                <li>
-                    <a href="#">Large</a>
-                </li>
-                <li>
-                    <a href="#">Small</a>
-                </li>
-            </ul>
-        </nav>
-
-        <button id="menu" aria-label="Menu"></button>
-
+            <nav>
+                <a href="#" id="home" title="Home">Home</a>
+                <a href="#" id="old" title="Old temples">Old</a>
+                <a href="#" id="new" title="New temples">New</a>
+                <a href="#" id="large" title="Large temples">Large</a>
+                <a href="#" id="small" title="Small temples">Small</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <h2>Gallery</h2>
-
-        <div class="container-fig">
-
-            <figure><img src="images/temples/brasilia-temple.jpg" alt="Brasilia Temple">
-                <figcaption>Brasilia (Brasil) Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/temples/buenos-aires-temple.jpg" alt="Buenos Aires Temple">
-                <figcaption>Buenos Aires (Argentina) Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/temples/helsinki-temple.jpg" alt="Helsinki Temple">
-                <figcaption>Helsinki (Finland) Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/temples/hong-kong-temple.jpg" alt="Hong Kong Temple">
-                <figcaption>Hong Kong (China) Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/temples/port-au-prince-temple.jpg" alt="Port-au-Prince Temple">
-                <figcaption>Port-au-Prince (Haiti) Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/temples/rome-temple.jpg" alt="Rome Temple">
-                <figcaption>Rome (Italy) Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/temples/santiago-temple.jpg" alt="Santiago Temple">
-                <figcaption>Santiago (Chile) Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/temples/santo-domingo-temple.jpg" alt="Santo Domingo Temple">
-                <figcaption>Santo Domingo (Dominican Republic) Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/temples/urdaneta-temple.jpg" alt="Phillipines Temple">
-                <figcaption>Urdaneta (Phillipines) Temple</figcaption>
-            </figure>
-        </div>
+        <h1>Home</h1>
+        <div class="album"></div>
     </main>
 
     <footer>

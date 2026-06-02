@@ -10,7 +10,6 @@
     --accent-color: rgb(225, 255, 0);
     --bg-color: rgb(236, 232, 232);
     --font-main: "Montserrat", sans-serif;
-
 }
 
 html {
@@ -18,118 +17,143 @@ html {
 }
 
 body {
+    margin: 0;
     font-family: var(--font-main);
-    max-width: 100%;
-    background-color: var(--bg-color);
-
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
-
 
 header {
-    display: flex;
-    align-items: center;
-    padding: 2rem 2rem;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-
 }
 
-.nav-container {
-    margin-left: auto;
-}
-
-.nav-container ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    gap: 1rem;
-    margin-right: 3rem;
-}
-
-.nav-container a {
-    color: var(--secondary-color);
-    text-decoration: none;
+#course-title {
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
     font-weight: 700;
-
 }
 
-nav a:hover {
-    color: var(--accent-color);
+.header-content {
+    position: relative;
 }
 
-/* HAMBURGER MENU */
 #menu {
-    font-size: 2rem;
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
     border: 0;
     background: none;
     color: var(--secondary-color);
-    top: 1rem;
-    right: 1rem;
+    font-size: 2rem;
     cursor: pointer;
-
 }
-
 
 #menu::before {
     content: "☰";
 }
 
 #menu.open::before {
-    content: "✖";
-    color: var(--accent-color);
+    content: "✕";
 }
 
-main h2 {
-    text-align: center;
-    color: var(--primary-color);
-    font-weight: 700;
-    font-size: 2rem;
-    padding: 2rem;
-}
-
-.container-fig {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    max-width: 80%;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-}
-
-.container-fig figure {
-    margin: 0;
-
-}
-
-.container-fig img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-    border-radius: 4px;
-}
-
-.container-fig figcaption {
-    text-align: center;
-    font-size: 0.875rem;
-    color: var(--primary-color);
-    padding: 0.5rem 0;
-}
-
-.container-fig img:hover {
-    transform: scale(1.05);
-    border: 1.5px solid var(--primary-color);
-}
-
-footer {
+nav {
+    display: flex;
+    flex-direction: column;
     background-color: var(--primary-color);
+}
+
+nav a {
+    display: none;
+    padding: 1rem;
     color: var(--secondary-color);
     text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+nav.open a {
+    display: block;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
     padding: 1rem;
 }
 
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.temple-card {
+    display: grid;
+    gap: 0.35rem;
+    min-height: 430px;
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--background-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--primary-color);
+    opacity: 0.8;
+    text-align: center;
+}
+
+.temple-card h2 {
+    margin: 0 0 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.temple-card p {
+    margin: 0.15rem 0;
+}
+
+.temple-card img {
+    display: block;
+    align-self: end;
+    width: 100%;
+    height: 200px;
+    margin-top: 0.75rem;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.label {
+    font-weight: 700;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    font-weight: 600;
+}
+
 footer p {
-    margin: 0.5rem 0;
+    margin: 0.35rem;
+}
+
+#lastModified {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
 }
