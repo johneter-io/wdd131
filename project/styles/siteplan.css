@@ -3,3 +3,125 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --black-raisin: rgb(36, 33, 45);
+    --silver: rgb(192, 192, 192);
+    --caribbean-blue: rgb(0, 166, 195);
+    --font-main: "Space Grotesk", sans-serif;
+    --max-width: 100%;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--silver);
+    background-color: var(--black-raisin);
+    height: auto;
+    text-align: justify;
+    margin: 0 7rem;
+}
+
+header {
+    text-align: center;
+    background-color: var(--black-raisin);
+    color: var(--primary-color);
+    padding: 2rem;
+    border-bottom: 3px solid var(--caribbean-blue);
+    width: var(--max-width);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.container {
+    color: var(--silver);
+    padding: 2rem;
+    background-color: var(--black-raisin);
+}
+
+h2 {
+    color: var(--caribbean-blue);
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.namecraft {
+    color: var(--black-raisin);
+    font-size: 2rem;
+    background-color: var(--caribbean-blue);
+    padding: 0.5rem;
+    font-weight: 400;
+}
+
+p,
+li {
+    font-size: 1.5rem;
+}
+
+.color {
+    display: flex;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    align-items: center;
+    gap: 1rem;
+}
+
+.style-line {
+    font-weight: 400;
+    color: var(--caribbean-blue);
+    padding: 0.2rem;
+}
+
+.style-bold {
+    font-weight: 900;
+    color: var(--caribbean-blue);
+    padding: 0.2rem;
+}
+
+.no-bull {
+    list-style: none;
+}
+
+.name,
+.purpose,
+.scenario,
+.color-schema,
+.typography {
+    border-bottom: 1px solid var(--silver);
+}
+
+.wireframes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.wireframes-grid h3 {
+    color: var(--caribbean-blue);
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.wireframes-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--caribbean-blue);
+    border-radius: 4px;
+}
+
+footer {
+    color: var(--silver);
+}
+
+footer p {
+    text-align: center;
+}
