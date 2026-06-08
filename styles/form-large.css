@@ -1,0 +1,51 @@
+@media (min-width: 768px) {
+
+    header {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    form {
+        padding: 2rem;
+        margin: 2rem auto;
+    }
+
+    .group {
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .allrating {
+        gap: 2rem;
+    }
+
+    .allrating div label {
+        font-size: 2rem;
+    }
+
+    .allrating div input[type="radio"] {
+        width: 25px;
+        height: 25px;
+    }
+
+    input[type="text"],
+    select {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    textarea {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+}

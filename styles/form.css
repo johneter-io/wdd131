@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black-raisin: rgb(36, 33, 45);
+    --silver: rgb(192, 192, 192);
+    --blue: rgb(8, 12, 250);
+    --font-main: "Montserrat", sans-serif;
+    --max-width: 650px;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 1rem auto;
+}
+
+header {
+    background-color: var(--black-raisin);
+    text-align: center;
+    font-weight: 900;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    color: var(--silver);
+    padding: 1rem;
+    font-family: var(--font-main);
+}
+
+form {
+    font-family: var(--font-main);
+    background-color: var(--silver);
+    max-width: var(--max-width);
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 1.2rem;
+}
+
+/* The parent container: aligns the groups horizontally */
+.allrating {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-evenly;
+    /* Paste the elements at the bottom */
+    align-items: flex-end;
+}
+
+/* Each label + radio button group: stacked vertically */
+.allrating div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.allrating div label {
+    font-size: 1.5rem;
+}
+
+.allrating div input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    /* Changes the appearance of the mouse pointer when you hover over the element. */
+    cursor: pointer;
+}
+
+input[type="text"],
+select {
+    padding: 10px;
+}
+
+span {
+    font-weight: 400;
+    color: var(--blue);
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.apply {
+    color: var(--black-raisin);
+    font-style: italic;
+    font-weight: 700;
+}
+
+button {
+    font-family: var(--font-main);
+    font-weight: 700;
+    background-color: var(--silver);
+    max-width: var(--max-width);
+    padding: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+#installDate {
+    padding: 0.5rem;
+}
+
+button:hover {
+    background-color: var(--black-raisin);
+    color: var(--silver);
+}
+
+footer {
+    background-color: var(--black-raisin);
+    text-align: center;
+    font-weight: 400;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    color: var(--silver);
+    padding: 1rem;
+    font-family: var(--font-main);
+}
+
+#currentyear {
+    color: var(--silver);
+}
