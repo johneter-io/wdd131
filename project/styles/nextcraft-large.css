@@ -1,0 +1,344 @@
+/* 
+======================================= HAMBURGER (excluding media queries) ======================================= */
+
+.hamburger {
+    background: transparent;
+    border: 1px solid var(--caribbean-blue);
+    color: var(--caribbean-blue);
+    font-size: 1.5rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+    /* Hidden by default on desktop */
+}
+
+/* 
+======================================= MEDIA QUERY 768px ======================================= */
+
+@media (max-width: 768px) {
+
+    /* ===== HAMBURGER ===== */
+    .hamburger {
+        display: block;
+        /* Visible on mobile */
+    }
+
+    /* ===== HEADER ===== */
+    .main-header {
+        flex-direction: column;
+        gap: 0.3rem;
+        padding: 0.5rem;
+    }
+
+    .nexcraft-logo h1 {
+        font-size: 1rem;
+    }
+
+    .nexcraft-logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-bar {
+        display: none;
+        /* Hidden by default on mobile */
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+        background-color: var(--black-raisin);
+        border-top: 1px solid var(--caribbean-blue);
+        justify-content: center;
+    }
+
+    .nav-bar.open {
+        display: flex;
+        /* visible when open */
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .nav-bar ul a {
+        margin-inline: 4px;
+        font-size: 0.85rem;
+    }
+
+    .nav-bar img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* ===== INDEX — HERO ===== */
+    .hero-section {
+        margin-top: 100px;
+    }
+
+    .hero-section p {
+        position: relative;
+        top: auto;
+        font-size: 1rem;
+        margin: 1rem auto;
+        line-height: 1.5rem;
+        border-radius: 20px;
+        padding: 1rem;
+        width: 90%;
+        opacity: 1;
+    }
+
+    .title {
+        font-size: 1.1rem;
+    }
+
+    .paragraph {
+        font-size: 1rem;
+    }
+
+    .quotes {
+        display: none;
+    }
+
+    /* ===== INDEX — IMAGE GRID ===== */
+    .image-grid {
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+        width: 95%;
+    }
+
+    .image-grid-main {
+        margin-bottom: 2rem;
+    }
+
+    .image-grid-main h2 {
+        display: none;
+    }
+
+    .icon-right {
+        margin-left: 80%;
+        top: 44%;
+    }
+
+    /* ===== SKILLS — CONTAINER ===== */
+    .container-card {
+        margin-top: 120px;
+    }
+
+    .card-hero {
+        padding: 2rem 1rem 1rem;
+    }
+
+    .card-label {
+        font-size: 1rem;
+    }
+
+    .card-hero-content h2 {
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    .card-hero-content p {
+        font-size: 1rem;
+    }
+
+    .skills-card {
+        font-size: 1rem;
+        margin: 0.5rem;
+        letter-spacing: 1px;
+    }
+
+    .container-all-cards {
+        grid-template-columns: 1fr;
+        width: 95%;
+        gap: 1rem;
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
+
+    .card h3 {
+        font-size: 0.9rem;
+        position: relative;
+        top: auto;
+        background-color: transparent;
+        color: var(--caribbean-blue);
+        padding: 0.3rem 0;
+        border-radius: 0;
+        margin-top: 0.5rem;
+    }
+
+    .card p {
+        position: relative;
+        top: auto;
+        width: 100%;
+        font-size: 0.85rem;
+        margin-top: 0.5rem;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .learn-more {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        justify-content: flex-end;
+        margin-bottom: 0.5rem;
+    }
+
+    /* ===== CONTACT ===== */
+    .main-contact {
+        margin-top: 120px;
+    }
+
+    .contact-section {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .contact-intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-intro p {
+        font-size: 0.9rem;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .contact-btn {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+    }
+
+    /* ===== ABOUT ===== */
+    .container-hero {
+        margin-top: 120px;
+    }
+
+    .about-hero {
+        padding: 2rem 1rem 1rem;
+    }
+
+    .about-label {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .about-block-label {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .about-hero-content h2 {
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    .about-hero-content p {
+        font-size: 1rem;
+    }
+
+    .about-section {
+        padding: 2rem 1rem;
+    }
+
+    .about-section-inner {
+        max-width: 100%;
+    }
+
+    .about-block h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-block p {
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+        margin-top: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .about-founder {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .founder-img-wrapper {
+        position: relative;
+        top: auto;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .founder-bio h2 {
+        font-size: 1.5rem;
+    }
+
+    .founder-bio p {
+        font-size: 0.9rem;
+    }
+
+    .founder-links {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .founder-btn,
+    .founder-btn-outline {
+        text-align: center;
+        padding: 0.6rem 1rem;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .about-values {
+        padding: 2rem 1rem;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer-block {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    .form-contact {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-contact input {
+        width: 140px;
+    }
+
+    .up-btn {
+        justify-content: center;
+    }
+
+    .last-mod {
+        font-size: 0.75rem;
+    }
+}
